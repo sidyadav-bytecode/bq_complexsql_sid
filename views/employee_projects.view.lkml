@@ -19,4 +19,14 @@ view: employee_projects {
     type: count
     drill_fields: [projects.project_id, projects.project_name, employees.employee_id, employees.employee_name]
   }
+  measure: project_count {
+    type: count_distinct
+    sql: ${project_id} ;;
+  }
+
+ # measure: average_project_count {
+ #  type: average
+ #  sql: ${project_id};;
+ #   value_format: "0.00"
+ # }
 }

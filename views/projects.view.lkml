@@ -35,4 +35,12 @@ view: projects {
     type: count
     drill_fields: [project_id, project_name, departments.department_id, departments.department_name, employee_projects.count]
   }
+  measure: min_budget {
+    type: min
+    sql: ${budget} ;;
+  }
+  measure: max_budget {
+    type: max
+    sql: ${budget} ;;
+  }
 }

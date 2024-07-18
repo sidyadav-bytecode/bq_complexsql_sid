@@ -24,6 +24,10 @@ view: employees {
     type: number
     sql: ${TABLE}.salary ;;
   }
+  measure: employee_distinct_count {
+    type: count_distinct
+    sql: ${employee_id} ;;
+  }
   measure: count {
     type: count
     drill_fields: [employee_id, employee_name, departments.department_id, departments.department_name, employee_projects.count]

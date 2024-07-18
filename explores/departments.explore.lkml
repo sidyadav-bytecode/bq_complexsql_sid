@@ -1,4 +1,6 @@
-include: "/views/departments.view.lkml"
-include: "/views/employee_projects.view.lkml"
+include: "/views/**/*.view.lkml"
 
-explore: departments {}
+explore: departments {
+
+
+}

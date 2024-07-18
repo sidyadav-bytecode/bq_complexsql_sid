@@ -18,4 +18,8 @@ explore: employee_projects {
     sql_on: ${projects.department_id} = ${departments.department_id} ;;
     relationship: many_to_one
   }
+  join: x_employee_project {
+    sql:  ;;
+    relationship: one_to_one
+  }
 }

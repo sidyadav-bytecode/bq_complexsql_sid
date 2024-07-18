@@ -43,4 +43,5 @@ view: projects {
     type: max
     sql: ${budget} ;;
   }
+
 }
